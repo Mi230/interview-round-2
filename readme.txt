@@ -1,0 +1,1 @@
+1.global service is use for get value of username from login page to componant page in global service i used "subject"

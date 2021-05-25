@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center toolbar" >
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main"> 
+    <form [formGroup]="loginform">
+
+      <ion-input class="mail" formControlName="email" type="text" placeholder="Enter email Here"></ion-input>
+
+    <div class="error" *ngIf="this.loginform.get('email').hasError('required') && this.loginform.get('email').touched" >Email is required</div>
+    <div class="error" *ngIf="this.loginform.get('email').hasError('email') && this.loginform.get('email').touched" >Email is not valid</div>
+  
+    
+    <ion-input formControlName="password" type="password" placeholder="Enter password here"></ion-input>
+
+    <div class="error" *ngIf="this.loginform.get('password').hasError('required') && this.loginform.get('password').touched" >password is required</div>
+   <ion-button [disabled]="!this.loginform.valid" (click)="gotohome()" expand="block" fill="clear" shape="round">
+     login
+   </ion-button>
+  </form>
+  </div>
+
+
+</ion-content>

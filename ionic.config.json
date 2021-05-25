@@ -1,5 +1,7 @@
 {
   "name": "interview",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

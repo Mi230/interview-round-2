@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add User</ion-title>  
+  </ion-toolbar>
+
+
+</ion-header>
+
+<ion-content>
+<form [formGroup]="insertform">
+
+<ion-input type="text" formControlName="name" placeholder="Enter Name"></ion-input>
+<div class="error" *ngIf="this.insertform.get('name').hasError('required') && this.insertform.get('name').touched" >Email is required</div>
+
+
+<ion-input type="text" formControlName="job" placeholder="Enter Job"></ion-input>
+<div class="error" *ngIf="this.insertform.get('job').hasError('required') && this.insertform.get('job').touched" >Job is required</div>
+
+
+<ion-button (click)="add()" [disabled]="!this.insertform.valid" expand="block"> Add User</ion-button>
+<ion-button (click)="close()" expand="block" fill="clear" shape="round">
+ Close
+</ion-button>
+</form>
+</ion-content>

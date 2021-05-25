@@ -24,3 +24,20 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+.error{
+
+    font-size: 0.9rem;
+    color: red;
+
+}
+.main{
+    padding-top: 10% !important;
+    text-align: center;
+}
+
+ion-content{
+    --ion-background-color : rgb(226, 241, 250);
+}
+ion-header{
+    --ion-background-color:rgb(137, 197, 231);
+}
