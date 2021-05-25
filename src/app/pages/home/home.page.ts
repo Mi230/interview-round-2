@@ -49,7 +49,6 @@ export class HomePage{
     });
 
     modal.onDidDismiss().then(() => {
-      this.pressent_toast('User created successfully');
      this.get_data_from_api(1);
       
     });
