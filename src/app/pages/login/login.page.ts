@@ -46,6 +46,7 @@ export class LoginPage {
           if (this.temp[i] == '@') {
 
             break;
+            
 
           } else {
 
